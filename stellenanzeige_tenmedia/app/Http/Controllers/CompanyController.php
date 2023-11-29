@@ -13,7 +13,8 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        //
+        $companies = Company::all();
+        return view('companies.index', compact('companies'));
     }
 
     /**
@@ -21,7 +22,7 @@ class CompanyController extends Controller
      */
     public function create()
     {
-        //
+        $this->authorize('create', Company::class);
     }
 
     /**
@@ -29,7 +30,7 @@ class CompanyController extends Controller
      */
     public function store(StoreCompanyRequest $request)
     {
-        //
+        $this->authorize('create', Company::class);
     }
 
     /**
@@ -37,7 +38,7 @@ class CompanyController extends Controller
      */
     public function show(Company $company)
     {
-        //
+        return view('companies.show', compact('company'));
     }
 
     /**
@@ -45,7 +46,7 @@ class CompanyController extends Controller
      */
     public function edit(Company $company)
     {
-        //
+        $this->authorize('update', $company);
     }
 
     /**
@@ -53,7 +54,7 @@ class CompanyController extends Controller
      */
     public function update(UpdateCompanyRequest $request, Company $company)
     {
-        //
+        $this->authorize('update', $company);
     }
 
     /**
@@ -61,6 +62,6 @@ class CompanyController extends Controller
      */
     public function destroy(Company $company)
     {
-        //
+        $this->authorize('delete', $company);
     }
 }

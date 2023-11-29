@@ -13,7 +13,8 @@ class JobController extends Controller
      */
     public function index()
     {
-        //
+        $jobs = Job::all();
+        return view('jobs.index', compact('jobs'));
     }
 
     /**
@@ -21,7 +22,7 @@ class JobController extends Controller
      */
     public function create()
     {
-        //
+        $this->authorize('create', Job::class);
     }
 
     /**
@@ -29,7 +30,7 @@ class JobController extends Controller
      */
     public function store(StoreJobRequest $request)
     {
-        //
+        $this->authorize('create', Job::class);
     }
 
     /**
@@ -37,7 +38,7 @@ class JobController extends Controller
      */
     public function show(Job $job)
     {
-        //
+        return view('jobs.show', compact('job'));
     }
 
     /**
@@ -45,7 +46,7 @@ class JobController extends Controller
      */
     public function edit(Job $job)
     {
-        //
+        $this->authorize('update', $job);
     }
 
     /**
@@ -53,7 +54,7 @@ class JobController extends Controller
      */
     public function update(UpdateJobRequest $request, Job $job)
     {
-        //
+        $this->authorize('update', $job);
     }
 
     /**
@@ -61,6 +62,6 @@ class JobController extends Controller
      */
     public function destroy(Job $job)
     {
-        //
+        $this->authorize('delete', $job);
     }
 }

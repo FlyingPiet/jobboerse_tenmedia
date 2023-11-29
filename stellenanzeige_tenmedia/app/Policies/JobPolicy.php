@@ -11,17 +11,17 @@ class JobPolicy
     /**
      * Determine whether the user can view any models.
      */
-    public function viewAny(User $user): bool
-    {
-        //
-    }
+    // public function viewAny(User $user): bool
+    // {
+    //     return true;
+    // }
 
     /**
      * Determine whether the user can view the model.
      */
     public function view(User $user, Job $job): bool
     {
-        //
+        return true;
     }
 
     /**
@@ -29,7 +29,7 @@ class JobPolicy
      */
     public function create(User $user): bool
     {
-        //
+        return $user->role === 'company' || $user->role === 'admin';
     }
 
     /**
@@ -37,7 +37,7 @@ class JobPolicy
      */
     public function update(User $user, Job $job): bool
     {
-        //
+        return $user->role === 'admin' || $user->id === $job->user_id;
     }
 
     /**
@@ -45,7 +45,7 @@ class JobPolicy
      */
     public function delete(User $user, Job $job): bool
     {
-        //
+        return $user->role === 'admin' || $user->id === $job->user_id;
     }
 
     /**
@@ -53,7 +53,7 @@ class JobPolicy
      */
     public function restore(User $user, Job $job): bool
     {
-        //
+        return $user->role === 'admin' || $user->id === $job->user_id;
     }
 
     /**
@@ -61,6 +61,6 @@ class JobPolicy
      */
     public function forceDelete(User $user, Job $job): bool
     {
-        //
+        return $user->role === 'admin';
     }
 }

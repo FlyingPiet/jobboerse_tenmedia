@@ -11,17 +11,17 @@ class CompanyPolicy
     /**
      * Determine whether the user can view any models.
      */
-    public function viewAny(User $user): bool
-    {
-        //
-    }
+    // public function viewAny(User $user): bool
+    // {
+    //     //
+    // }
 
     /**
      * Determine whether the user can view the model.
      */
     public function view(User $user, Company $company): bool
     {
-        //
+        return true;
     }
 
     /**
@@ -29,7 +29,7 @@ class CompanyPolicy
      */
     public function create(User $user): bool
     {
-        //
+        return $user->role === 'admin' || $user->role === 'company';
     }
 
     /**
@@ -37,7 +37,7 @@ class CompanyPolicy
      */
     public function update(User $user, Company $company): bool
     {
-        //
+        return $user->role === 'admin' || $user->id === $company->user_id;
     }
 
     /**
@@ -45,7 +45,7 @@ class CompanyPolicy
      */
     public function delete(User $user, Company $company): bool
     {
-        //
+        return $user->role === 'admin' || $user->id === $company->user_id;
     }
 
     /**
@@ -53,7 +53,7 @@ class CompanyPolicy
      */
     public function restore(User $user, Company $company): bool
     {
-        //
+        return $user->role === 'admin' || $user->id === $company->user_id;
     }
 
     /**
@@ -61,6 +61,6 @@ class CompanyPolicy
      */
     public function forceDelete(User $user, Company $company): bool
     {
-        //
+        return $user->role === 'admin';
     }
 }

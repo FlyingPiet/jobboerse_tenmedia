@@ -15,6 +15,9 @@
     <!-- Custom CSS -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
+    {{-- Icon --}}
+    <link rel="icon" href="/images/OIG.jpg" type="image/jpg">
+
     <title>FlyingPiet's Job Board</title>
 </head>
 

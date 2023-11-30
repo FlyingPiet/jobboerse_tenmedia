@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="p-3 mb-2 bg-gray text-dark container text-center">
-        <h1 class="display-2 fw-bold">Welcome to FlyingPiet's Job Board</h1>
+        <h1 class="display-4 fw-bold mt-5">Welcome to FlyingPiet's Job Board</h1>
         <hr>
         <p class="text-sm-justify my-0 mx-5 px-3 lh-1 ">
             Welcome to our platform where professional opportunities and talents come together to shape people's careers and

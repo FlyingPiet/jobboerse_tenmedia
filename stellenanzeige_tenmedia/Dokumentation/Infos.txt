@@ -1,0 +1,57 @@
+Sitemap:
+1. Startseite (Home):
+   - Begrüßung, Informationen über die Plattform
+
+2. Job Listings:
+   - Liste von verfügbaren Jobs
+   - Filteroptionen nach Kategorie, Unternehmen, etc. (noch nicht vorhanden)
+   - Einzelne Jobdetailsseite
+
+3. Unternehmensprofile:
+   - Liste von Unternehmen
+   - Einzelne Unternehmensdetailsseite
+   - Joberstellung (noch nicht vorhanden)
+
+4. Kategorien:
+   - Liste von Jobkategorien
+   - Einzelne Kategorieseite
+   - Kategorieerstellung (noch nicht vorhanden)
+
+5. User:
+   - Anmeldung (noch nicht vorhanden)
+   - Profilinformation (noch nicht vorhanden)
+
+
+Modelle und Datenbankattribute:
+1. Job-Modell:
+   - Titel, Beschreibung, Anforderungen, Kategorie (Fremdschlüssel), Unternehmen (Fremdschlüssel)
+
+2. Company-Modell:
+   - Name, Beschreibung, Adresse, Branche, Liste der veröffentlichten Jobs
+
+3. Category-Modell:
+   - Name, Beschreibung, Liste von Jobs in dieser Kategorie
+
+4. User-Modell:
+   - Benutzername, E-Mail, Passwort, Rolle (z. B. normaler Benutzer, Firma oder Administrator)
+
+
+Beziehungen zwischen Modellen:
+- Ein Job gehört zu einer Kategorie (n-zu-1-Beziehung zwischen Job und Category).
+- Ein Job gehört zu einem Unternehmen (n-zu-1-Beziehung zwischen Job und Company).
+- Ein Benutzer kann sich auf mehrere Jobs bewerben, aber ein Job kann nur einem Benutzer gehören (n-zu-1-Beziehung zwischen User und Job).
+
+Benutzerrechte:
+- Normaler Benutzer:
+  - Ansehen von Job-Listings, Unternehmensprofilen, Kategorien
+  - Bewerbung auf Jobs
+
+- Firma:
+  - Alle Rechte eines normalen Benutzers
+  - Hinzufügen, Bearbeiten und Löschen von Jobs	
+
+- Administrator:
+  - Alle Rechte eines normalen Benutzers und einer Firma
+  - Hinzufügen, Bearbeiten und Löschen von Jobs, Unternehmen, Kategorien
+  - Verwalten von Benutzerprofilen, Rollenzuweisung
+

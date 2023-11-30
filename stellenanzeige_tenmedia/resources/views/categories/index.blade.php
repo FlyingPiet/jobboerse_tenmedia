@@ -21,7 +21,7 @@
                         </a>
                     </td>
                     <td>{{ $category->description }}</td>
-                    <td>{{ $category->jobs->count() }}</td>
+                    <td class="text-center">{{ $category->jobs->count() }}</td>
                     <td>
                         {{-- wird später integriert --}}
                         

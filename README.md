@@ -20,4 +20,4 @@ JobSeeder sollte in meinem Fall als letztes ausgeführt werden ,weil er die Frem
 Schritt 4:
 php artisan serve
 
-Damit wird die Anwendung gestartet.
+Startet den in Php bereits integrierten Server. Standardmäßig können wir dann im Browser unsere Laravel-Anwendung unter localhost:8000 aufrufen.

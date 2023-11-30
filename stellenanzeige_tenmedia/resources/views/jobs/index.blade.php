@@ -18,7 +18,7 @@
 @section('content')
     <h1 class="display-4 fw-bold mt-5">Job Listings</h1>
     <hr>
-    <table class="table table-bordered table-hover mt-4 fs-3">
+    <table class="table table-bordered table-hover mt-4 fs-3 ">
         <thead>
             <tr>
                 <th scope="col">Title</th>

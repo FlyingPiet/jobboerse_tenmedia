@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <!-- Header -->
+    {{-- Header --}}
     <header>
         <nav class="navbar navbar-expand-lg bg-dark fs-2">
             <div class="container">
@@ -56,19 +56,19 @@
                                 User
                             </a>
                         </li>
-                        <!-- <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li> -->
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+    {{-- Main --}}
+
     <div class="container">
         @yield('content')
     </div>
 
-
+    {{-- FOOTER --}}
 
     <footer class="footer mt-auto py-2 fs-5 bg-dark">
         <div class="container">

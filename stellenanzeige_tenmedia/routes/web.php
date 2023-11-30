@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('start');
+    return view('startsite/index');
 });
 
 Route::resource('users', UserController::class);

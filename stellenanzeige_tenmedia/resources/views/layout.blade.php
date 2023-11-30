@@ -70,7 +70,7 @@
 
 
 
-    <footer class="footer mt-auto py-2 fs-5 fixed-bottom bg-dark">
+    <footer class="footer mt-auto py-2 fs-5 bg-dark">
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-md-auto">

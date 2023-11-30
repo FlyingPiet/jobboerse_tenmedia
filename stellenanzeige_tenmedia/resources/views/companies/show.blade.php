@@ -4,9 +4,20 @@
     <div class="container">
         <h1 class="display-4 fw-bold mt-5">{{ $company->name }}</h1>
         <hr>
-        <p><span class="fw-bold">Description::</span> {{ $company->description }}</p>
-        <p><span class="fw-bold">Address:</span> {{ $company->address }}</p>
-        <p><span class="fw-bold">Industry:</span> {{ $company->industry }}</p>
+        <p class="my-1 mx-5 px-3 lh-1"><span class="fw-bold">Description: </span> {{ $company->description }}</p>
+        <p class="my-1 mx-5 px-3 lh-1"><span class="fw-bold">Address: </span> {{ $company->address }}</p>
+        <p class="my-1 mx-5 px-3 lh-1"><span class="fw-bold">Industry: </span> {{ $company->industry }}</p>
+
+        <h2 class="my-2 mx-5 px-3 lh-1 fw-bold">Jobs at {{ $company->name }}:</h2>
+        @if($company->jobs->count() > 0)
+            <ul class="my-1 mx-5 px-3 lh-1">
+                @foreach($company->jobs as $job)
+                    <li><a href="{{ route('jobs.show', $job) }}" class="link-dark fs-4">{{ $job->title }}</a></li>
+                @endforeach
+            </ul>
+        @else
+            <p class="my-2 mx-5 px-3 lh-1">No jobs available in this company.</p>
+        @endif
         <a href="/companies">
             <img class="arrow" src="/images/arrow.png" alt="Pfeil" />
         </a>

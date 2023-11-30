@@ -10,6 +10,7 @@
                 <th scope="col">Name</th>
                 <th scope="col">Address</th>
                 <th scope="col">Industry</th>
+                <th scope="col">Number of Jobs</th>
                 <th scope="col">Actions</th>
             </tr>
         </thead>
@@ -23,6 +24,7 @@
                     </td>
                     <td>{{ $company->address }}</td>
                     <td>{{ $company->industry }}</td>
+                    <td class="text-center">{{ $company->jobs->count() }}</td>
                     <td>
                         {{-- wird später integriert --}}
                         

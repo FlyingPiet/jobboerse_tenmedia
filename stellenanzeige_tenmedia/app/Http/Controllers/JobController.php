@@ -23,6 +23,8 @@ class JobController extends Controller
     public function create()
     {
         $this->authorize('create', Job::class);
+
+        return view('jobs.create_edit');
     }
 
     /**
@@ -31,6 +33,8 @@ class JobController extends Controller
     public function store(StoreJobRequest $request)
     {
         $this->authorize('create', Job::class);
+
+        return redirect()->route('jobs.index');
     }
 
     /**
@@ -47,6 +51,8 @@ class JobController extends Controller
     public function edit(Job $job)
     {
         $this->authorize('update', $job);
+
+        return view('jobs.create_edit', compact('job'));
     }
 
     /**
@@ -55,6 +61,8 @@ class JobController extends Controller
     public function update(UpdateJobRequest $request, Job $job)
     {
         $this->authorize('update', $job);
+
+        return redirect()->route('jobs.index');
     }
 
     /**

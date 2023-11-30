@@ -1,0 +1,47 @@
+html,
+body {
+    font-family: "Teko";
+    background-color: lightgrey;
+    /* max-width: 980px;  margin: auto; */
+}
+
+.navbar-brand:hover {
+    opacity: 1;
+    color: limegreen !important;
+    transition: all 1000ms;
+    -webkit-transition: all 1000ms;
+    -moz-transition: all 1000ms;
+    -o-transition: all 1000ms;
+}
+
+.nav-link.active:hover {
+    opacity: 1;
+    color: limegreen !important;
+    transition: all 1000ms;
+    -webkit-transition: all 1000ms;
+    -moz-transition: all 1000ms;
+    -o-transition: all 1000ms;
+}
+
+.current {
+    color: limegreen !important;
+}
+
+.logo {
+    opacity: 1;
+    color: limegreen !important;
+}
+.logo:hover {
+    opacity: 1;
+    color: white !important;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 2em;
+    line-height: 1.4em;
+    text-align: justify;
+}

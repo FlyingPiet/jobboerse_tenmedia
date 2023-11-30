@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\JobController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('hallo');
+    return view('start');
 });
+
+//Route::get('/user', [UserController::class, 'index']);
+Route::resource('users', UserController::class);
+Route::resource('jobs' ,JobController::class);

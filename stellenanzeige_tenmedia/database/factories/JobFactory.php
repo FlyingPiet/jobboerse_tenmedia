@@ -19,9 +19,9 @@ class JobFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => fake()->jobTitle,
-            'description' => fake()->paragraph,
-            'requirements' => fake()->text,
+            'title' => $this->faker->jobTitle,
+            'description' => $this->faker->paragraph,
+            'requirements' => $this->faker->text,
             'category_id' => Category::inRandomOrder()->first()->id,
             'company_id' => Company::inRandomOrder()->first()->id,
         ];

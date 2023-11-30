@@ -16,6 +16,7 @@ php artisan db:seed --class=JobSeeder
 
 Mit der Ausführung der Befehle werden jeweils 20 Datenssätze mittels faker angelegt. 
 JobSeeder sollte in meinem Fall als letztes ausgeführt werden ,weil er die Fremdschlüssel von Company und Category bekommt.
+Es ist leider noch nicht möglich eigene Datensätze über die Anwendung zu erstellen.
 
 Schritt 4:
 php artisan serve

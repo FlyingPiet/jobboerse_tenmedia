@@ -20,14 +20,25 @@ class UserController extends Controller
         return view('users.show', compact('user'));
     }
 
+    public function create()
+    {
+        $this->authorize('create', User::class);
+
+        return view('users.create_edit');
+    }
+
     public function edit(User $user)
     {
         $this->authorize('update', $user);
+
+        return view('users.create_edit', compact('user'));
     }
 
     public function update(Request $request, User $user)
     {
         $this->authorize('update', $user);
+
+        return redirect()->route('users.index');
     }
 
     public function destroy(User $user)

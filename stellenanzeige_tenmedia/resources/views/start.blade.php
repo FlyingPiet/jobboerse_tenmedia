@@ -15,7 +15,7 @@
     <!-- Custom CSS -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
-    <title>FlyingPiet's Jobbörse</title>
+    <title>FlyingPiet's Job Board</title>
 </head>
 
 <body>
@@ -23,11 +23,11 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark fs-2">
             <div class="container">
-                <a class="navbar-brand text-light fs-2" href="/index.html">
+                <a class="navbar-brand text-light fs-2" href="/">
                     <img class="logo" src="{{ asset('images/logo1_white.png') }}" alt="Logo" width="50"
                         height="auto" class="d-inline-block align-text-center" />
                     FlyingPiet's
-                    <span class="logo">Jobbörse</span>
+                    <span class="logo">Job Board</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -37,22 +37,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="/pages/job.html">
+                            <a class="nav-link active text-light" aria-current="page" href="/jobs">
                                 Jobs
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="pages/company.html">
-                                Firmen
+                            <a class="nav-link active text-light" aria-current="page" href="/companies">
+                                Companies
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="pages/category.html">
-                                Kategorie
+                            <a class="nav-link active text-light" aria-current="page" href="/categories">
+                                Categories
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="pages/user.html">
+                            <a class="nav-link active text-light" aria-current="page" href="/users">
                                 User
                             </a>
                         </li>
@@ -65,44 +65,34 @@
         </nav>
     </header>
     <div class="p-3 mb-2 bg-gray text-dark container text-center">
-        <h1 class="display-2 fw-bold">Willkommen bei FlyingPiet's Jobbörse</h1>
+        <h1 class="display-2 fw-bold">Welcome to FlyingPiet's Job Board</h1>
         <hr>
         <p class="text-sm-justify my-0 mx-5 px-3 lh-1 ">
-            Herzlich willkommen auf unserer Plattform, wo berufliche Möglichkeiten und Talente aufeinandertreffen, um
-            die Karrieren von Menschen zu gestalten und Unternehmen mit den besten Fachleuten zu verbinden. Bei
-            FlyingPiet geht es nicht nur um Jobsuche, sondern auch um das Finden von beruflichem Erfolg und persönlicher
-            Weiterentwicklung.</p>
+            Welcome to our platform where professional opportunities and talents come together to shape people's careers and connect companies with the best professionals. FlyingPiet's job board is not only about finding a job, but also about finding professional success and personal development.</p>
 
         <p class="text-sm-justify my-0 mx-5 pt-2 px-3 lh-1">
-            Unsere Mission ist es, eine Brücke zwischen Arbeitgebern und Arbeitnehmern zu schlagen, um eine perfekte
-            Passform zu gewährleisten. Egal, ob du auf der Suche nach deinem Traumjob bist oder qualifizierte Fachkräfte
-            für dein Unternehmen suchst – FlyingPiet ist der Ort, um deine Ziele zu erreichen.
+            Our mission is to build a bridge between employers and employees to ensure a perfect fit. Whether you're looking for your dream job or seeking qualified professionals for your company, FlyingPiet's job board is the place to achieve your goals.
         </p>
         <p class="text-sm-justify my-0 mx-5 pt-3 px-3 lh-1 fw-bold">
-            Was macht die FlyingPiet's Jobbörse einzigartig?
+            What makes FlyingPiet's job board unique?
         </p>
         <p class="text-sm-justify my-0 mx-5 pt-3 px-3 lh-1">
-            <span class="fw-bold">Umfassendes Stellenangebot:</span> Wir bieten eine breite Palette von
-            Stellenangeboten in verschiedenen Branchen
-            und Berufsfeldern.
+            <span class="fw-bold">Comprehensive job offer:</span> We offer a wide range of job opportunities in various industries and professional fields.
         </p>
         <p class="text-sm-justify my-0 mx-5 pt-1 px-3 lh-1">
-            <span class="fw-bold">Benutzerfreundlichkeit:</span> Unsere Plattform ist einfach zu navigieren, so dass du schnell und effizient nach
-            den passenden Jobangeboten suchen kannst.
+            <span class="fw-bold">Ease of use:</span> Our platform is easy to navigate, so you can search for the right job offers quickly and efficiently.
         </p>
         <p class="text-md-justify my-0 mx-5 pt-1 px-3 lh-1">
-            <span class="fw-bold">Professionelle Unterstützung:</span> Unser Team steht dir mit professioneller Unterstützung zur Seite, sei es bei
-            der Erstellung deines Bewerbungsprofils oder bei der Schaltung von Stellenanzeigen.
+            <span class="fw-bold">Professional support:</span> Our team is on hand to provide you with professional support, whether it's creating your application profile or posting job ads.
         </p>
         <p class="text-md-justify my-0 mx-5 pt-3 px-3 lh-1">
-            Trete unserer wachsenden Community bei und entdecke, wie FlyingPiet deine beruflichen Träume Wirklichkeit
-            werden lassen kann. Wir freuen uns darauf, dich auf deiner beruflichen Reise zu begleiten!
+            Join our growing community and discover how FlyingPiet's job board can make your professional dreams come true. We look forward to accompanying you on your professional journey!
         </p>
         <p class="text-md-justify my-0 mx-5 pt-3 px-3 lh-1">
-            Mit freundlichen Grüßen,
+            Yours sincerely,
         </p>
-        <p class="text-md-justify my-0 mx-5 pt-3 px-3 lh-1">
-            Euer FlyingPiet
+        <p class="text-md-justify my-0 mx-5 pt-3 px-3 lh-1 fw-bold">
+            Your FlyingPiet
         </p>
     </div>
 
@@ -115,13 +105,13 @@
                     <a class="text-light" href="#">Impressum</a>
                 </div>
                 <div class="col-md-auto">
-                    <a class="text-light" href="#">Kontakt</a>
+                    <a class="text-light" href="#">Contact</a>
                 </div>
                 <div class="col-md-auto">
-                    <a class="text-light" href="#">Datenschutz</a>
+                    <a class="text-light" href="#">Privacy policy</a>
                 </div>
                 <div class="col-md-auto">
-                    <span class="text-light">&copy; FlyingPiet</span>
+                    <span class="text-light">&copy; FlyingPiet 2023</span>
                 </div>
             </div>
         </div>

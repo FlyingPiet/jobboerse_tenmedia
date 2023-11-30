@@ -1,38 +1,27 @@
 @extends('layout')
 
-{{-- @section('content')
-    <h1 class="display-4 fw-bold mt-5">Job Listings</h1>
-    <hr>
-    <ul class="list-group fs-4">
-        @foreach ($jobs as $job)
-            <li class="list-group-item mb-1">
-                <div class="d-flex bd-highlight align-items-center">
-                    <a href="{{ route('jobs.show', $job) }}" class="flex-grow-1 bd-highlight link-dark">{{ $job->title }}</a>                   
-                    <span class="px-2 bd-highlight">{{ $job->company->name }}</span>
-                </div>
-            </li>
-        @endforeach
-    </ul>
-@endsection --}}
-
 @section('content')
-    <h1 class="display-4 fw-bold mt-5">Job Listings</h1>
+    <h1 class="display-4 fw-bold mt-5">Job Categories</h1>
     <hr>
     <table class="table table-bordered table-hover mt-4 fs-3">
         <thead>
             <tr>
-                <th scope="col">Title</th>
-                <th scope="col">Company</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Number of Jobs</th>
                 <th scope="col">Actions</th>
             </tr>
         </thead>
-        <tbody class="fs-4">
-            @foreach ($jobs as $job)
+        <tbody>
+            @foreach($categories as $category)
                 <tr>
                     <td>
-                        <a href="{{ route('jobs.show', $job) }}" class="link-dark">{{ $job->title }}</a>
+                        <a href="{{ route('categories.show', $category) }}" class="link-dark">
+                            {{ $category->name }}
+                        </a>
                     </td>
-                    <td>{{ $job->company->name }}</td>
+                    <td>{{ $category->description }}</td>
+                    <td>{{ $category->jobs->count() }}</td>
                     <td>
                         {{-- wird später integriert --}}
                         

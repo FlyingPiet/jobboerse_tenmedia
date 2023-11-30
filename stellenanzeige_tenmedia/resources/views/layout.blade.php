@@ -15,7 +15,7 @@
     <!-- Custom CSS -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
-    <title>FlyingPiet's Jobbörse</title>
+    <title>FlyingPiet's Job Board</title>
 </head>
 
 <body>
@@ -23,11 +23,11 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark fs-2">
             <div class="container">
-                <a class="navbar-brand text-light fs-2" href="/index.html">
+                <a class="navbar-brand text-light fs-2" href="/">
                     <img class="logo" src="{{ asset('images/logo1_white.png') }}" alt="Logo" width="50"
                         height="auto" class="d-inline-block align-text-center" />
                     FlyingPiet's
-                    <span class="logo">Jobbörse</span>
+                    <span class="logo">Job Board</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -37,22 +37,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="/pages/job.html">
+                            <a class="nav-link active text-light" aria-current="page" href="/jobs">
                                 Jobs
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="pages/company.html">
-                                Firmen
+                            <a class="nav-link active text-light" aria-current="page" href="/companies">
+                                Companies
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="pages/category.html">
-                                Kategorie
+                            <a class="nav-link active text-light" aria-current="page" href="/categories">
+                                Categories
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="pages/user.html">
+                            <a class="nav-link active text-light" aria-current="page" href="/users">
                                 User
                             </a>
                         </li>
@@ -77,13 +77,13 @@
                     <a class="text-light" href="#">Impressum</a>
                 </div>
                 <div class="col-md-auto">
-                    <a class="text-light" href="#">Kontakt</a>
+                    <a class="text-light" href="#">Contact</a>
                 </div>
                 <div class="col-md-auto">
-                    <a class="text-light" href="#">Datenschutz</a>
+                    <a class="text-light" href="#">Privacy policy</a>
                 </div>
                 <div class="col-md-auto">
-                    <span class="text-light">&copy; FlyingPiet</span>
+                    <span class="text-light">&copy; FlyingPiet 2023</span>
                 </div>
             </div>
         </div>

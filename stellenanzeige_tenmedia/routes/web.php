@@ -1,7 +1,12 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CompanyController;
+
+
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,6 +24,7 @@ Route::get('/', function () {
     return view('start');
 });
 
-//Route::get('/user', [UserController::class, 'index']);
 Route::resource('users', UserController::class);
 Route::resource('jobs' ,JobController::class);
+Route::resource('companies', CompanyController::class);
+Route::resource('categories', CategoryController::class);

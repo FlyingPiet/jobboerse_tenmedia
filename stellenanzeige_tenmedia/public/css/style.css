@@ -45,3 +45,10 @@ p {
     line-height: 1.4em;
     text-align: justify;
 }
+
+.arrow{
+    margin: 50px 60px;
+    transform: rotate(90deg);
+    width: 30px; 
+    height: 30px;
+}

@@ -6,5 +6,4 @@
     <h1>{{ $user->username }}</h1>
     <p>Email: {{ $user->email }}</p>
     <p>Role: {{ $user->role }}</p>
-    <!-- Weitere Informationen je nach Bedarf -->
 @endsection
